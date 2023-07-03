@@ -26,10 +26,30 @@
     --tytles-h-ll: #2e2f42;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: var(--all-background);
+    width: 1440px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
 }
 
 .link{
@@ -38,6 +58,43 @@ body{
 
 button{
     cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 72px;
+    border: 1px solid #E7E9FC;
+}
+
+.header-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+}
+
+.header-ul-l{
+    display: flex;
+}
+
+.header-ul-ll {
+    display: flex;
+    align-items: center;
+}
+
+header .list{
+    gap: 40px;
 }
 
 .logo{
@@ -49,6 +106,7 @@ button{
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    padding-right: 76px;
 }
 
 .span{
@@ -66,9 +124,9 @@ button{
 .list-menu-header{
     color: var(--text-header-normal);
     font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .list-menu-header:hover,
@@ -92,6 +150,7 @@ button{
 
 .address{
     font-style: normal;
+    margin-left: auto;
 }
 
 .list-contacts-header{
@@ -114,6 +173,14 @@ button{
 .first-section{
     background-color: var(--title-background);
     text-align: center;
+    height: 600px;
+    display: flex;
+    width: 1440px;
+    border: 1px solid var(--title-background);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .title-first-section{
@@ -122,6 +189,7 @@ button{
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;    
 }
 
 .first-section-button{
@@ -132,6 +200,10 @@ button{
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: "Roboto", sans-serif;
+    display: inline-flex;
+    border: var(--title-button-normal);
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .first-section-button:hover,
@@ -142,6 +214,23 @@ button{
 .invisible-text {
     font-size: 0;
     opacity: 0;
+}
+
+.l-list-ll-section{
+    gap: 24px;
+    margin-top: 120px;
+    display: flex;
+}
+
+.l-list-lll-section{
+    margin-top: 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.ll-list-ll-section>li{
+    border: 1px solid #E7E9FC;
 }
 
 .second-section-titles{
@@ -169,10 +258,28 @@ button{
     text-align: center;
     text-transform: capitalize;
     color: var(--tytles-h-ll);
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fourth-section{
     background-color: var(--main-background-first);
+    width: 1440px;
+    margin-top: 120px;
+}
+
+.l-list-llll-section{
+    padding-top: 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}    
+
+.l-list-llll-section>li{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin-bottom: 120px;
 }
 
 .background-list-fourth-section{
@@ -186,6 +293,10 @@ button{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .fourth-section-p {
@@ -194,10 +305,14 @@ button{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 32px;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .footer{
     background-color: var(--title-background);
+    height: 314px;
 }
 
 .logo-footer{
@@ -209,6 +324,9 @@ button{
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: flex;
+    margin-left: 141px;
+    padding-top: 101.5px;
 }
 
 .second-span {
@@ -221,6 +339,9 @@ button{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
+    width: 264px;
+    padding-top: 17.5px;
+    margin-left: 141px;
 }
 
 
