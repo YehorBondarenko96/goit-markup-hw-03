@@ -355,12 +355,41 @@ header .list{
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-l-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 96px;
 }
 
 .first-button:hover,
 .first-button:focus{
     background-color: var(--first-button-portfolio-hover);
     color: var(--text-first-portfolio-hover);
+}
+
+.portfolio-ll-list{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.portfolio-ll-list>li{
+    border: 1px solid #E7E9FC;
+    padding-bottom: 32px;
+    margin-bottom: 48px;
+    width: 360px;
+    height: 420px;
+}
+
+.img-portfolio{
+    object-fit: cover;
 }
 
 .title-text-cards-portfolio{
