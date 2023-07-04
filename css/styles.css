@@ -369,7 +369,19 @@ header .list{
 
 
 
-.first-button{
+.first-section-portfolio{
+    padding: 96px 0 120px 0;
+}
+
+.portfolio-l-list{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.first-button {
     background-color: var(--first-button-portfolio-normal);
     color: var(--text-first-button-portfolio);
     font-family: "Roboto", sans-serif;
@@ -380,35 +392,27 @@ header .list{
     text-align: center;
     border-radius: 4px;
     border: 1px solid #E7E9FC;
-}
-
-.portfolio-l-list{
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    margin-top: 96px;
+    padding: 12px 24px;
 }
 
 .first-button:hover,
 .first-button:focus{
     background-color: var(--first-button-portfolio-hover);
     color: var(--text-first-portfolio-hover);
+    border: 1px solid transparent;
 }
 
 .portfolio-ll-list{
-    margin-top: 72px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     margin-bottom: 120px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-.portfolio-ll-list>li{
-    border: 1px solid #E7E9FC;
+.item-portfolio-ll-list{
     padding-bottom: 32px;
-    margin-bottom: 48px;
-    width: 360px;
-    height: 420px;
+    width: calc((100%-48px)/3);
     display: flex;
     align-items: flex-end;
 }
@@ -420,6 +424,12 @@ header .list{
     object-position: top center;
 }
 
+.application-data{
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
 .title-text-cards-portfolio{
     color:var(--first-inscription-cards);
     font-size: 20px;
@@ -427,9 +437,7 @@ header .list{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: left;
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .text-cards-portfolio{
@@ -437,5 +445,4 @@ header .list{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 16px;
 }
