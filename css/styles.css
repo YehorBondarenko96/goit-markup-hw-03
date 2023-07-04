@@ -386,10 +386,15 @@ header .list{
     margin-bottom: 48px;
     width: 360px;
     height: 420px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .img-portfolio{
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: top center;
 }
 
 .title-text-cards-portfolio{
@@ -399,6 +404,9 @@ header .list{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: left;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: 16px;
 }
 
 .text-cards-portfolio{
@@ -406,4 +414,5 @@ header .list{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
 }
