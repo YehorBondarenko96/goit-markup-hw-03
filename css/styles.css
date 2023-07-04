@@ -227,7 +227,7 @@ header .list{
     padding: 120px 0;
 }
 
-.visually-hidden{
+..visually-hidden{
     display: none;
     position: absolute;
     width: 1px;
