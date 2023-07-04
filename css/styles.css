@@ -412,7 +412,7 @@ header .list{
 
 .item-portfolio-ll-list{
     padding-bottom: 32px;
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3);
     display: flex;
     align-items: flex-end;
 }
