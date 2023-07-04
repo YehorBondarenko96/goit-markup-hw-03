@@ -68,7 +68,9 @@ button{
     padding-right: 15px;
 }
 
-header {
+.header{
+    display: flex;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
     height: 72px;
@@ -77,11 +79,11 @@ header {
 
 .header-div{
     display: flex;
-    align-items: center;
 }
 
-nav{
+.nav{
     display: flex;
+    align-items: center;
 }
 
 .header-ul-l{
@@ -106,7 +108,7 @@ header .list{
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .span{
@@ -127,6 +129,7 @@ header .list{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .list-menu-header:hover,
@@ -179,8 +182,8 @@ header .list{
     border: 1px solid var(--title-background);
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     gap: 48px;
+    padding: 188px 0;
 }
 
 .title-first-section{
@@ -189,7 +192,10 @@ header .list{
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;    
+    width: 100%;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .first-section-button{
@@ -200,10 +206,16 @@ header .list{
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: "Roboto", sans-serif;
-    display: inline-flex;
-    border: var(--title-button-normal);
+    display: block;
     padding: 16px 32px;
     border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
 }
 
 .first-section-button:hover,
@@ -211,7 +223,11 @@ header .list{
     background-color: var(--title-button-hover);
 }
 
-.invisible-text {
+.second-section{
+    padding: 120px 0;
+}
+
+.visually-hidden {
     font-size: 0;
     opacity: 0;
 }
@@ -222,11 +238,8 @@ header .list{
     display: flex;
 }
 
-.l-list-lll-section{
-    margin-top: 72px;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
+.item-l-list-ll-section{
+    width: calc((100%-74px)/4);
 }
 
 .ll-list-ll-section>li{
@@ -240,6 +253,7 @@ header .list{
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: left;
+    margin-bottom: 8px;
 }
 
 .second-section-text{
@@ -250,6 +264,10 @@ header .list{
     color: var(--second-section-text);
 }
 
+.third-section{
+    padding-bottom: 120px;
+}
+
 .tytles-h-ll{
     font-size: 36px;
     font-weight: 700;
@@ -258,15 +276,26 @@ header .list{
     text-align: center;
     text-transform: capitalize;
     color: var(--tytles-h-ll);
-    padding-top: 120px;
+    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.l-list-lll-section {
+    margin-top: 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.list-l-list-lll-section{
+    width: calc((100%-48px)/3);
 }
 
 .fourth-section{
     background-color: var(--main-background-first);
     width: 1440px;
-    margin-top: 120px;
+    padding: 120px 0;
 }
 
 .l-list-llll-section{
@@ -274,16 +303,18 @@ header .list{
     display: flex;
     gap: 24px;
     justify-content: center;
-}    
+}
 
-.l-list-llll-section>li{
+.list-fourth-section{
+    background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     margin-bottom: 120px;
+    width: calc((100%-74px)/4);
 }
 
-.background-list-fourth-section{
-    background-color: #FFFFFF;
+.employee-data{
+    padding: 32px 16px;
 }
 
 .fourth-section-h-lll{
@@ -292,11 +323,8 @@ header .list{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: auto;
-    padding-right: auto;
+    text-align: center;    
+    margin-bottom: 8px;
 }
 
 .fourth-section-p {
@@ -305,14 +333,11 @@ header .list{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 .footer{
     background-color: var(--title-background);
-    height: 314px;
+    padding: 100px 0;
 }
 
 .logo-footer{
@@ -324,9 +349,8 @@ header .list{
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    display: flex;
-    margin-left: 141px;
-    padding-top: 101.5px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .second-span {
@@ -339,9 +363,8 @@ header .list{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    width: 264px;
-    padding-top: 17.5px;
-    margin-left: 141px;
+    width: 100%;
+    max-width: 264px;
 }
 
 
