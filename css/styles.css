@@ -34,7 +34,6 @@ body{
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: var(--all-background);
-    width: 1440px;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -69,12 +68,7 @@ button{
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    height: 72px;
-    border: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-div{
@@ -130,6 +124,7 @@ header .list{
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
 }
 
 .list-menu-header:hover,
@@ -161,6 +156,8 @@ header .list{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 
 .list-contacts-header:hover,
@@ -176,13 +173,6 @@ header .list{
 .first-section{
     background-color: var(--title-background);
     text-align: center;
-    height: 600px;
-    display: flex;
-    width: 1440px;
-    border: 1px solid var(--title-background);
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
     padding: 188px 0;
 }
 
@@ -242,12 +232,11 @@ header .list{
 
 .l-list-ll-section{
     gap: 24px;
-    margin-top: 120px;
     display: flex;
 }
 
 .item-l-list-ll-section{
-    width: calc((100%-74px)/4);
+    width: calc((100% - 72px)/4);
 }
 
 .ll-list-ll-section>li{
@@ -290,24 +279,21 @@ header .list{
 }
 
 .l-list-lll-section {
-    margin-top: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
 }
 
 .list-l-list-lll-section{
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px)/3);
 }
 
 .fourth-section{
     background-color: var(--main-background-first);
-    width: 1440px;
     padding: 120px 0;
 }
 
 .l-list-llll-section{
-    padding-top: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -317,8 +303,7 @@ header .list{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    margin-bottom: 120px;
-    width: calc((100%-74px)/4);
+    width: calc((100% - 72px)/4);
 }
 
 .employee-data{
@@ -385,7 +370,6 @@ header .list{
     display: flex;
     gap: 24px;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -413,23 +397,16 @@ header .list{
 .portfolio-ll-list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
     column-gap: 24px;
     row-gap: 48px;
 }
 
 .item-portfolio-ll-list{
-    padding-bottom: 32px;
     width: calc((100% - 48px) / 3);
-    display: flex;
-    align-items: flex-end;
 }
 
-.img-portfolio{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: top center;
+.link-portfolio-ll-list{
+    display: block;
 }
 
 .application-data{
